@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Responsive grid with multi-selection filter</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/theme.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Responsive grid with multi-selection filter</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="page-header">
+			<h1>Responsive grid with multi-selection filter</h1>
+		</div>
+		
+		<div id="container-items" class="container">
+			<div class="item">
+				<img src="images/the-last-of-us.jpg" />
+				<div class="item-title"><p>The Last of Us</p></div>
+			</div>
+			<div class="item">
+				<img src="images/alan-wake.jpg" />
+				<div class="item-title"><p>Alan Wake</p></div>
+			</div>
+			<div class="item">
+				<img src="images/alan-wake.jpg" />
+				<div class="item-title"><p>Texte</p></div>
+			</div>
+			<div class="item item-w2">
+				<img src="images/halo-4.jpg" />
+				<div class="item-title"><p>Halo 4</p></div>
+			</div>
+			<div class="item">
+				<img src="images/alan-wake.jpg" />
+				<div class="item-title"><p>Texte</p></div>
+			</div>
+			<div class="item">
+				<img src="images/alan-wake.jpg" />
+				<div class="item-title"><p>Texte</p></div>
+			</div>
+			<div class="item">
+				<img src="images/alan-wake.jpg" />
+				<div class="item-title"><p>Texte</p></div>
+			</div>
+		</div>
+		
+
+
+	</div> <!-- /container -->
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/masonry.pkdg.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		var container = document.querySelector('#container-items');
+		var msnry = new Masonry( container, {
+			// options
+			columnWidth: 100,
+			itemSelector: '.item'
+		});
+	</script>
+</body>
+</html>
